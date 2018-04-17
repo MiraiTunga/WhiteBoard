@@ -1,7 +1,7 @@
 import { Component, OnInit ,HostBinding} from '@angular/core';
 
 import * as interact from "interactjs";
-import {BoardItemComponent} from "../board-item/board-item.component"; [interact]
+import {BoardItemComponent} from "../board-item/board-item.component";
 
 
 @Component({
@@ -48,18 +48,18 @@ export class BoxComponent extends BoardItemComponent implements OnInit{
                     y = (parseFloat(target.getAttribute('data-y')) || 0);
 
                 // update the element's style
-              //  target.style.width  = event.rect.width + 'px';
-             //   target.style.height = event.rect.height + 'px';
+                target.style.width  = event.rect.width + 'px';
+                target.style.height = event.rect.height + 'px';
 
                 // translate when resizing from top or left edges
-             //   x += event.deltaRect.left;
-              //  y += event.deltaRect.top;
+                x += event.deltaRect.left;
+                y += event.deltaRect.top;
 
-                target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px,' + y + 'px)';
+             target.style.webkitTransform = target.style.transform = 'translate(' + x + 'px,' + y + 'px)';
 
                 target.setAttribute('data-x', x);
                 target.setAttribute('data-y', y);
-               // target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
+                target.textContent = Math.round(event.rect.width) + '\u00D7' + Math.round(event.rect.height);
             });
     
         function dragMoveListener (event) {
