@@ -26,10 +26,10 @@ export class AddToBoardService {
         
         // 1. Create a component reference from the component 
         const componentRef = this.componentFactoryResolver
-            .resolveComponentFactory(BoxComponent)
+            .resolveComponentFactory(component)
             .create(this.injector);
         
-        componentRef.instance.SetPostion(0,0);
+       // componentRef.instance.SetPostion(0,0);
 
         
         // 2. Attach component to the appRef so that it's inside the ng component tree

@@ -11,6 +11,7 @@ import {AddToBoardService} from "./add-to-board.service";
 import { BoardItemComponent } from './board-item/board-item.component';
 import { SettingsComponent } from './settings/settings.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ArrowComponent } from './arrow/arrow.component';
 /*
 const appRoutes: Routes = [
     { path: '/', component: MainContainerComponent },
@@ -26,7 +27,8 @@ const appRoutes: Routes = [
     MainContainerComponent,
     BoardItemComponent,
     SettingsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ArrowComponent
   ],
  imports: [
      /*RouterModule.forRoot(
@@ -36,7 +38,7 @@ const appRoutes: Routes = [
     BrowserModule
   ],
   providers: [AddToBoardService],
-    entryComponents: [ BoxComponent ],
+    entryComponents: [ BoxComponent,ArrowComponent ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

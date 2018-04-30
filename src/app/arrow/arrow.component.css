@@ -1,11 +1,11 @@
 :host(.resize-drag) {
     min-width: 100px;
-    min-height: 100px;
+    min-height: 10px;
     padding: 10px;
     background: #FFFFA5;
     position: absolute;
     box-sizing: border-box;
-  
+
 }
 .container{
     width: 100%;
@@ -25,40 +25,3 @@
     background: #FFFFA5;
 }
 
-
-.anchor{
-    position: absolute;
-    background: red;
-    width: 20px;
-    height: 20px;
-}
-
-
-
-.anchor.anchor-1{
-
- top:-20px;
-left: -20px;
-
-}
-
-.anchor.anchor-2{
-
-    top:-20px;
-    right: -20px;
-
-}
-
-.anchor.anchor-3{
-
-    bottom:-20px;
- left: -20px;
-
-}
-
-.anchor.anchor-4{
-
-    bottom:-20px;
-    right: -20px;
-
-}
